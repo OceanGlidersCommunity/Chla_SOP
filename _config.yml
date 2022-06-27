@@ -1,4 +1,4 @@
-title: "OceanGliders Oxygen SOP"
+title: "OceanGliders Chla SOP"
 copyright: ""
 author: ""
 logo: images/logo-ocean-gliders.png
@@ -6,7 +6,7 @@ logo: images/logo-ocean-gliders.png
 execute:
   execute_notebooks: "off"
 repository:
-  url: https://github.com/OceanGlidersCommunity/Oxygen_SOP
+  url: https://github.com/OceanGlidersCommunity/Chla_SOP
   branch: main
 html:
   use_repository_button: true
@@ -14,7 +14,7 @@ html:
   use_edit_page_button: true
   comments:
     utterances:
-      repo: "OceanGlidersCommunity/Oxygen_SOP"
+      repo: "OceanGlidersCommunity/Chla_SOP"
   extra_footer: |
     <p>  By the OceanGliders community using
       <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
