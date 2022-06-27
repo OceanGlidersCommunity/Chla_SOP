@@ -1,0 +1,36 @@
+title: "OceanGliders Oxygen SOP"
+copyright: ""
+author: ""
+logo: images/logo-ocean-gliders.png
+
+execute:
+  execute_notebooks: "off"
+repository:
+  url: https://github.com/OceanGlidersCommunity/Oxygen_SOP
+  branch: main
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  comments:
+    utterances:
+      repo: "OceanGlidersCommunity/Oxygen_SOP"
+  extra_footer: |
+    <p>  By the OceanGliders community using
+      <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
+      This work is licensed under a 
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
+    </p>
+    
+sphinx:
+  local_extensions:
+    apastyle: _ext/
+    bracket_citation_style: _ext/
+  config:
+    bibtex_default_style: myapastyle
+    bibtex_reference_style: author_year_round
+    html_show_copyright: false
+
+bibtex_reference_style      : author_year_round
+bibtex_default_style        : myapastyle
+bibtex_bibfiles             : oxygen.bib
