@@ -1,4 +1,4 @@
-name: oxygen_sop
+name: chla_sop
 dependencies:
   - pip
   - pip:
