@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. Pre-deployment operations and calibrations &#8212; OceanGliders Oxygen SOP</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "OceanGlidersCommunity/Oxygen_SOP");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Missions execution" href="oxygen_mission_execution.html" />
+    <link rel="prev" title="3. Sensors and integrations" href="oxygen_sensors_integration.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-ocean-gliders.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">OceanGliders Oxygen SOP</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   [WIP] OceanGliders Chlorophyll a SOP
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="authors_SOP_development_process.html">
+   1. Authors, development process and contributions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_introduction.html">
+   2. Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_sensors_integration.html">
+   3. Sensors and integrations
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   4. Pre-deployment operations and calibrations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_mission_execution.html">
+   5. Missions execution
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_rtqc.html">
+   6. Required Metadata, Real Time Data Processing &amp; Quality Control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_post_recovery.html">
+   7. Post-recovery operations and calibrations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_dmqc.html">
+   8. Delayed Mode Quality Control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_sharing.html">
+   9. Data sharing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_references.html">
+   10. References
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowledgement.html">
+   11. Acknowledgement
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_appendix.html">
+   12. Appendices
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sections/oxygen_pre_deployment.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/OceanGlidersCommunity/Oxygen_SOP"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/OceanGlidersCommunity/Oxygen_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/oxygen_pre_deployment.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Oxygen_SOP/edit/main/sections/oxygen_pre_deployment.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#storage-and-cleaning">
+   4.1. Storage and cleaning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-configuration-for-deployment">
+   4.2. Sensor configuration for deployment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#antifouling">
+   4.3. Antifouling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#air-saturation-quality-check">
+   4.4. Air saturation quality check
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-deployment-calibration">
+   4.5. Pre-deployment calibration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#two-point-calibration-procedure">
+     4.5.1. Two point calibration procedure
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calibration-procedure">
+       4.5.1.1. Calibration procedure
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#in-situ-intercomparison-in-the-tank-during-ballasting">
+     4.5.2. In situ intercomparison in the tank during ballasting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effects-of-atmospheric-pressure-during-calibration">
+   4.6. Effects of atmospheric pressure during calibration
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Pre-deployment operations and calibrations</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#storage-and-cleaning">
+   4.1. Storage and cleaning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-configuration-for-deployment">
+   4.2. Sensor configuration for deployment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#antifouling">
+   4.3. Antifouling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#air-saturation-quality-check">
+   4.4. Air saturation quality check
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-deployment-calibration">
+   4.5. Pre-deployment calibration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#two-point-calibration-procedure">
+     4.5.1. Two point calibration procedure
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calibration-procedure">
+       4.5.1.1. Calibration procedure
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#in-situ-intercomparison-in-the-tank-during-ballasting">
+     4.5.2. In situ intercomparison in the tank during ballasting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effects-of-atmospheric-pressure-during-calibration">
+   4.6. Effects of atmospheric pressure during calibration
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="pre-deployment-operations-and-calibrations">
+<h1><span class="section-number">4. </span>Pre-deployment operations and calibrations<a class="headerlink" href="#pre-deployment-operations-and-calibrations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="storage-and-cleaning">
+<span id="id1"></span><h2><span class="section-number">4.1. </span>Storage and cleaning<a class="headerlink" href="#storage-and-cleaning" title="Permalink to this headline">¶</a></h2>
+<p>Optode foils typically drift more while in storage than while in use, the reasons for this are thought to be due to exposure to UV radiation and dry air <span id="id2">(<a class="reference internal" href="oxygen_references.html#id7" title="H. C. Bittig, A. Koertzinger, C. Neill, Eikbert van Ooijen, Joshua N. Plant, Johannes Hahn, Kenneth S. Johnson, Bo Yang, and Steven R. Emerson. Oxygen Optode Sensors: Principle, Characterization, Calibration, and Application in the Ocean. Frontiers in Marine Science, 4(January):1–25, 2018. doi:10.3389/fmars.2017.00429.">Bittig <em>et al.</em>, 2018</a>)</span>, <span id="id3">(<a class="reference internal" href="oxygen_references.html#id26" title="Aanderaa Data Instruments AS. Aanderaa oxygen optodes: best practices for maintaining high data quality. Aanderaa Data Instruments AS, Bergen, Norway, ():28pp, 2018. URL: https://www.aanderaa.com/media/pdfs/aanderaa-oxygen-optodes-best-practices-calib-info-literature-list.pdf, doi:http://dx.doi.org/10.25607/OBP-868.">Data Instruments AS, 2018</a>)</span>.
+We recommend that all optodes should be stored away from the light (especially fluorescent lights), keep the foil wet and use the rubber caps provided with the sensor.
+Sensors should be cleaned before storage and stored with black caps on, including some Milli-Q or tap water, or with a piece of wet cotton taped against the foil.
+If sensors are stored dry the foil will dry out which could lead to 1-2 % lower readings.
+The sensor then needs to be placed in water to hydrate at least 24 h prior to starting field measurements again.</p>
+<div class="figure align-default" id="storage">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/storage.jpg"><img alt="Sensor storage" class="bg-primary mb-1" src="../_images/storage.jpg" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Keeping sensor in small beakers before and during calibration process. Only the membrane will need to be submerged in distilled water.</span><a class="headerlink" href="#storage" title="Permalink to this image">¶</a></p>
+</div>
+<p>After recovery the sensor has to be cleaned to remove any biofouling. The following protocol is recommended by the manufacturer:</p>
+<ol class="simple">
+<li><p>If the sensor has been for too long exposed to the air, leave it overnight in a vinegar solution.</p></li>
+<li><p>Next day, place the sensor in soapy water and use a soft brush to gently remove any material adhered to the surface.</p></li>
+<li><p>Rinse very well with clean water and dry carefully.</p></li>
+</ol>
+<p><em>NOTE: Don’t change the foil unless it is physically damaged.</em></p>
+</div>
+<div class="section" id="sensor-configuration-for-deployment">
+<span id="sensor-configuration"></span><h2><span class="section-number">4.2. </span>Sensor configuration for deployment<a class="headerlink" href="#sensor-configuration-for-deployment" title="Permalink to this headline">¶</a></h2>
+<p>Salinity configuration: 0 PSU.
+For optode sensors: when there is a small variation in salinity (less than 1 g/kg), it can be set to the mid-value avoiding the need of salinity compensation.
+However, even in that case, it is a good practice to set salinity to 0 for two reasons: 1) it is usually difficult to find the salinity value defined for old deployments and 2) in case the equations change, it would be easier to recalculate oxygen values from uncompensated values.
+Optodes should be configured to record the intermediate parameters (<code class="docutils literal notranslate"><span class="pre">calphase</span></code> and temperature), not just oxygen concentration or saturation.
+Accurate time-stamps, or offsets relative to CT measurements must be recorded for performing the lag correction.</p>
+</div>
+<div class="section" id="antifouling">
+<h2><span class="section-number">4.3. </span>Antifouling<a class="headerlink" href="#antifouling" title="Permalink to this headline">¶</a></h2>
+<p>Materials immersed in water experience a series of biological and chemical processes, resulting in the formation of complex layers with attached organisms. This biofouling can be divided into microfouling and macrofouling <span id="id4">(<a class="reference internal" href="oxygen_references.html#id14" title="Adrián Delgado, Ciprian Briciu-Burghina, and Fiona Regan. Antifouling strategies for sensors used in water monitoring: review and future perspectives. Sensors, 2021. URL: https://www.mdpi.com/1424-8220/21/2/389, doi:10.3390/s21020389.">Delgado <em>et al.</em>, 2021</a>)</span>.</p>
+<p>In optodes sensors, biofouling can be severe enough to block oxygen molecules from entering the sensing foil. Aanderaa has different solutions that have been successfully applied, some includes:</p>
+<ol class="simple">
+<li><p>Copper tape (e.g. 3M 1181) or Copper/Nickel (last much longer) are easy antifouling solutions.
+When applying the tape, be sure that it is not in contact with any other metal parts otherwise, the tape will lose its antifouling properties.</p></li>
+<li><p>Paints / coatings - optical sensors, so these can only reduce growth nearby but not on the actual sensing foil.</p></li>
+<li><p>Ongoing trials: Aanderaa is focusing on non-toxic methods like fibre/haircloth and “shark skin” film.</p></li>
+</ol>
+<p>Mechanical wipers or UV radiation based approaches are generally unsuitable for gliders due to their increased power requirements and drag.
+Where optodes are mounted in such a way as to allow in-air sampling biofouling is likely reduced.</p>
+<p>Regardless of whether efforts to prevent fouling are made, it is vital that post-recovery photographs are taken of the optode so that the impact of biofouling can be assessed during DMQC.</p>
+</div>
+<div class="section" id="air-saturation-quality-check">
+<h2><span class="section-number">4.4. </span>Air saturation quality check<a class="headerlink" href="#air-saturation-quality-check" title="Permalink to this headline">¶</a></h2>
+<p>Prior to deployment in-air measurements can be used as a reference to correct for drift.
+Aanderaa outline a method <span id="id5">(<a class="reference internal" href="oxygen_references.html#id26" title="Aanderaa Data Instruments AS. Aanderaa oxygen optodes: best practices for maintaining high data quality. Aanderaa Data Instruments AS, Bergen, Norway, ():28pp, 2018. URL: https://www.aanderaa.com/media/pdfs/aanderaa-oxygen-optodes-best-practices-calib-info-literature-list.pdf, doi:http://dx.doi.org/10.25607/OBP-868.">Data Instruments AS, 2018</a>)</span> based on in-air calibrations on Argo floats and gliders <span id="id6">(<a class="reference internal" href="oxygen_references.html#id5" title="Henry C. Bittig and Arne Körtzinger. Tackling oxygen optode drift: near-surface and in-air oxygen optode measurements on a float provide an accurate in situ reference. Journal of Atmospheric and Oceanic Technology, 32(8):1536 - 1543, 2015. URL: https://journals.ametsoc.org/view/journals/atot/32/8/jtech-d-14-00162_1.xml, doi:10.1175/JTECH-D-14-00162.1.">Bittig and Körtzinger, 2015</a>)</span>, <span id="id7">(<a class="reference internal" href="oxygen_references.html#id20" title="Kenneth S. Johnson, Joshua N. Plant, Stephen C. Riser, and Denis Gilbert. Air oxygen calibration of oxygen optodes on a profiling float array. Journal of Atmospheric and Oceanic Technology, 32(11):2160 - 2172, 2015. URL: https://journals.ametsoc.org/view/journals/atot/32/11/jtech-d-15-0101_1.xml, doi:10.1175/JTECH-D-15-0101.1.">Johnson <em>et al.</em>, 2015</a>)</span>, <span id="id8">(<a class="reference internal" href="oxygen_references.html#id30" title="Henry Bittig, Arne Kortzinger, Ken Johnson, HervÃ© Claustre, Steve Emerson, Katja Fennel, Hernan Garcia, Denis Gilbert, Nicolas Gruber, Dong-Jin Kang, Wajih Naqvi, Satya Prakash, Steven Riser, Virginie Thierry, Bronte Tilbrook, Hiroshi Uchida, Osvaldo Ulloa, and Xiagang Xing. Scor wg 142: quality control procedures for oxygen and other biogeochemical sensors on floats and gliders. recommendation for oxygen measurements from argo floats, implementation of in-air-measurement routine to assure highest long-term accuracy. Report (Qualification paper (procedure, accreditation support)), SCOR, FRANCE, GERMANY, USA, CANADA, AUSTRALIA, CHILE, CHINA, INDIA, JAPAN, KOREA, SWITZERLAND, 2015. URL: https://archimer.ifremer.fr/doc/00348/45917/, doi:https://doi.org/10.13155/45917.">Bittig <em>et al.</em>, 2015</a>)</span>, <span id="id9">(<a class="reference internal" href="oxygen_references.html#id2" title="David P. Nicholson and Melanie L. Feen. Air calibration of an oxygen optode on an underwater glider. Limnology and Oceanography: Methods, 15(5):495-502, 2017. URL: https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.1002/lom3.10177, arXiv:https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.1002/lom3.10177, doi:https://doi.org/10.1002/lom3.10177.">Nicholson and Feen, 2017</a>)</span> and <span id="id10">(<a class="reference internal" href="oxygen_references.html#id7" title="H. C. Bittig, A. Koertzinger, C. Neill, Eikbert van Ooijen, Joshua N. Plant, Johannes Hahn, Kenneth S. Johnson, Bo Yang, and Steven R. Emerson. Oxygen Optode Sensors: Principle, Characterization, Calibration, and Application in the Ocean. Frontiers in Marine Science, 4(January):1–25, 2018. doi:10.3389/fmars.2017.00429.">Bittig <em>et al.</em>, 2018</a>)</span>.
+It is recommended to take in-air measurements both before and after deployments.
+This won’t be useful if sensor foil is not wet or the temperature of the foil is different from that measured with the temperature sensor. It therefore is best performed with 4330 and similar sensors where the temperature probe is next to the foil.
+You will need to leave the sensor logging outside in the free air for several hours before and after deployment. Remember to record the local air pressure.</p>
+<p><em>NOTE: At sea level at standard air pressure (101.3 kPa = 1 Atm = 14.69 psi) the sensors should show 100 % if wet and 102 % if completely dry; at air pressure 100 kPa it should show (1.3/101.3)100 = 1.3 % lower. See also <a class="reference internal" href="#air-pressure-effects"><span class="std std-numref">Section 4.6</span></a>.</em></p>
+<p><em>NOTE: It is highly recommended to do this protocol at night when humidity is higher and the temperature is lower and more stable.</em></p>
+</div>
+<div class="section" id="pre-deployment-calibration">
+<h2><span class="section-number">4.5. </span>Pre-deployment calibration<a class="headerlink" href="#pre-deployment-calibration" title="Permalink to this headline">¶</a></h2>
+<p>Optodes and similar instruments generally drift more while in storage than while in use.
+It is therefore essential that these instruments are recalibrated prior to glider deployment.
+This is necessary even if in-situ reference (Winkler) samples are taken during the deployment as they will not cover the full range of oxygen concentrations during the period of the mission.
+As the instrument drift manifests as an increasing offset from zero in addition to a reducing sensitivity, a two point calibration is required to rescale the optodes measuring range.</p>
+<div class="section" id="two-point-calibration-procedure">
+<span id="two-point-calibration"></span><h3><span class="section-number">4.5.1. </span>Two point calibration procedure<a class="headerlink" href="#two-point-calibration-procedure" title="Permalink to this headline">¶</a></h3>
+<p>Two point calibration is used primarily to rescale the sensor to account for a reduction in sensitivity of the sensing foil over time.
+It’s recommended to do it before the deployment and after recovery. NOTE: Sensor foil must be wet during all procedure steps.<br />
+This procedure is suitable for the measurement of the full range of oceanic oxygen concentrations (0-400 μmol kg<sup>-1</sup>) in uncontaminated seawater.*</p>
+<p>Some information to read before we proceed with the calibration:</p>
+<ul class="simple">
+<li><p>For a 100 % bubbled bath, connect an aquarium pump to a tube which has been fitted with a porous stone (bubble dispenser) at the end. This will create small air bubbles that are sufficient to equilibrate the water rapidly.
+To verify that optodes are in saturated water you can take them up from the water and hold them just above the surface for a few minutes. There should then be no change in the saturation readings (Aanderaa Best Practices). Avoid submerging the air-stones as this can supersaturate the solution. Use a magnetic stirrer to homogenize the water. It is important that the aquarium pump takes in air from an open atmosphere outside, not from inside the room/laboratory where O2 levels will be affected by the ongoing activities and/or the ventilation.</p></li>
+<li><p>For 0 % saturation solution, add 20 g sodium sulphite to approx. 1 L. A high level of precision is not required, and excess sodium sulphite is not an issue. Sodium sulphite rapidly removes the oxygen and, as long as crystals of the compound can be seen, the oxygen level in the water will stay at 0. Sodium sulphite also has the advantage of being inexpensive and the level of toxicity is low. This solution is considered irritating and wearing appropriate PPE (gloves, goggles and lab coat) is recommended.
+There is also an option of removing the oxygen from the water bubbling nitrogen all time. In this case you have to be sure all oxygen is removed from the solution, this will happen after 3-5 minutes bubbling (maximum volume of 100 mL approx., for bigger volume you will have to increase the time). You have to keep injecting N2 during all time of the zero calibration.</p></li>
+<li><p>If any residue of the sodium sulphite solution remains on the sensing surface, the 100 % measurement will be inaccurate. Therefore, 100 % DO saturation calibration should be performed first. To avoid contamination, always rinse well with distilled water.</p></li>
+<li><p>Always check saturation values: an outset of ± 5 % is adequate, so a value between 95 % and 105 % is correct. See {numref}(air_pressure_effects).</p></li>
+<li><p>While calibrating, changing air pressure and water temperature will affect the partial pressure (and apparent saturation concentration) which makes calibration difficult. Accurate air pressure readings for the room and a stable room temperature is ideal.
+When onboard a ship or in a lab external meteorological sensors will not represent those conditions inside and should only be used if the calibration is to be done outside. A portable barometer and air thermometer is highly recommended.</p></li>
+<li><p>The Winkler method can be used to determine the concentration of 100 % solution (± 0.15 μmol kg<sup>-1</sup>). We recommend following the GO-SHIP protocol described by <span id="id11">(<a class="reference internal" href="oxygen_references.html#id19" title="C. Langdon. Determination of dissolved oxygen in seaweater by winkler titration using amperometric technique. In, The GO-SHIP Repeat Hydrography Manual: A Collection of Expert Reports and Guidelines., 134(1):1-17, 2010. URL: https://www.go-ship.org/HydroMan.html, doi:https://doi.org/10.25607/OBP-1350.">Langdon, 2010</a>)</span> and a well-trained technician to do the sampling and analysis.
+It can not be used for the 0 % solution and shouldn’t be used for concentration below 20 μmol kg<sup>-1</sup> <span id="id12">(<a class="reference internal" href="oxygen_references.html#id15" title="Soeren Thomsen, Torsten Kanzow, Gerd Krahmann, Richard J. Greatbatch, Marcus Dengler, and Gaute Lavik. The formation of a subsurface anticyclonic eddy in the peru-chile undercurrent and its impact on the near-coastal salinity, oxygen, and nutrient distributions. Journal of Geophysical Research: Oceans, 121(1):476-501, 2016. URL: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015JC010878, arXiv:https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/2015JC010878, doi:https://doi.org/10.1002/2015JC010878.">Thomsen <em>et al.</em>, 2016</a>)</span>.</p></li>
+</ul>
+<p>It is recommended to perform the calibration at least two different temperatures which cover the expected in-situ temperature range.
+There are several possibilities in order to achieve this, some examples:</p>
+<ol class="simple">
+<li><p>Doing the experiments in rooms with different temperatures. Such as a walk-in fridge and a normal lab. You need to leave all materials, reagents and sensors in the room at least 8 hours (e.g. overnight) before starting the calibration.</p></li>
+<li><p>Doing the experiment in a room where the temperature can be adjusted, such as with a power air-conditioning unit. You need to leave all materials, reagents and sensors in the room at least 8 hours at each temperature before starting the calibration.</p></li>
+<li><p>Doing the experiment using a thermostatic bath. You need to leave the 0 and 100% solutions in the bath at least overnight before starting the calibration. It is most likely that you won’t be able to use a magnetic stirrer, so you need to be sure that you place the end of the bubble tube in the bottom of the bottle/beaker.</p></li>
+</ol>
+<p>The preferred method is with a thermostatic bath.</p>
+<p>In situ intercomparison will be required to find the offset of the sensor in different seawater conditions.
+Therefore, samples should be taken in the tank during the ballasting (if this is 1-2 days before deployment, no more) and at the deployment/recovery site (ideally at different depths).</p>
+<div class="figure align-default" id="calibration">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/100-0-calibration.png"><img alt="100 0 % calibration" class="bg-primary mb-1" src="../_images/100-0-calibration.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Setup for 100% and 0% calibration.</span><a class="headerlink" href="#calibration" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="calibration-procedure">
+<span id="id13"></span><h4><span class="section-number">4.5.1.1. </span>Calibration procedure<a class="headerlink" href="#calibration-procedure" title="Permalink to this headline">¶</a></h4>
+<p>The commands and steps needed to calibrate an oxygen sensor vary, see <a class="reference internal" href="oxygen_appendix.html#sensor-calibration-commands"><span class="std std-numref">Section 12.1</span></a> for specific details. Here we outline the general procedure for a two point calibration.</p>
+<ol class="simple">
+<li><p>Prepare a 100 % saturation water solution.</p></li>
+<li><p>Immerse the sensor in the 100 % solution overnight. If this is not possible, having the sensor submerged in distilled water will be enough to keep the foil wet for the calibration.</p></li>
+<li><p>Immerse the sensor(s) and ensure the sensing foils have been kept moist.</p></li>
+<li><p>Prepare the 0 % solution in another container.</p></li>
+<li><p>Connect to and power on your sensor, it is good practice to log the output from the terminal session to a file for reference.</p></li>
+<li><p>Observe the local air-pressure and update the instrument if needed.</p></li>
+<li><p>Begin taking measurements with the sensor, once temperature and oxygen concentration readings have stabilized these values are used as the saturation concentration data point.</p></li>
+<li><p>Move the sensor to the 0 % solution and wait for the readings to stabilize, use these readings as the zero value.</p></li>
+<li><p>Self calibrating sensors, such as optodes, can now be told to calibrate themselves, otherwise use these two data points to determine the slope and intercept needed for the sensor.</p></li>
+<li><p>Rinse the sensor thoroughly to remove any sodium sulphite solution, and return the sensor back to the 100 % saturated solution to verify the calibration.
+The optode should read close to 100 % saturation.</p></li>
+<li><p>Take paired winkler samples from the 100 % solution to confirm it is 100 % saturated.</p></li>
+<li><p>Return the sensor to the configuration required for your glider.</p></li>
+</ol>
+<div class="figure align-default" id="terminal-program">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/TerminalProgram.jpg"><img alt="Terminal program" class="bg-primary mb-1" src="../_images/TerminalProgram.jpg" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Recording data using a terminal program.</span><a class="headerlink" href="#terminal-program" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="in-situ-intercomparison-in-the-tank-during-ballasting">
+<h3><span class="section-number">4.5.2. </span>In situ intercomparison in the tank during ballasting<a class="headerlink" href="#in-situ-intercomparison-in-the-tank-during-ballasting" title="Permalink to this headline">¶</a></h3>
+<p>This is an extra in situ intercomparison to carry out if access to the tank while ballasting the glider is possible and the ballasting is close in time to the deployment (no more than 1-2 days before).</p>
+<p>Materials: Silicon tube for sampling, Winkler bottles, Winkler reagents, pipettes and tips (or a bottle-top dispenser for reagent bottles), titration material (buretes or titrator).</p>
+<ol class="simple">
+<li><p>The sensor should be submerged overnight in water to ensure the foil is wet. If the sensor is already mounted in the glider, use a wet sponge or rubber lens cap. Keep the sensor in the dark.</p></li>
+<li><p>Once the glider is in the ballasting tanks, place the silicon tube for sampling near the sensor.</p></li>
+<li><p>Once the sensor measurements are stable (variations in the measurements are not higher than the precision/resolution of the sensor), start sampling water for Winkler analysis. Take paired samples every 5-10 minutes and record the time taken. 4 to 6 samples should be taken in total.</p></li>
+<li><p>Check the outset of the sensor by comparing values measured by the Optode sensor with winkler values after measuring the bottle samples in the lab.</p></li>
+</ol>
+<div class="figure align-default" id="winkler-ballasting">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/winkler-ballasting.png"><img alt="Winkler calibration during balasting" class="bg-primary mb-1" src="../_images/winkler-ballasting.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Taking samples for Winkler analysis during ballasting in the glider tank at PLOCAN facilities.</span><a class="headerlink" href="#winkler-ballasting" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="effects-of-atmospheric-pressure-during-calibration">
+<span id="air-pressure-effects"></span><h2><span class="section-number">4.6. </span>Effects of atmospheric pressure during calibration<a class="headerlink" href="#effects-of-atmospheric-pressure-during-calibration" title="Permalink to this headline">¶</a></h2>
+<p>During the above procedures it is important to note that the equilibrium saturation oxygen concentration (C<sub>sat</sub> i.e. <span id="id14">Garcia and Gordon (<a class="reference internal" href="oxygen_references.html#id12" title="Herncin E. Garcia and Louis I. Gordon. Oxygen solubility in seawater: better fitting equations. Limnology and Oceanography, 37(6):1307-1312, 1992. URL: https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.4319/lo.1992.37.6.1307, arXiv:https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.4319/lo.1992.37.6.1307, doi:https://doi.org/10.4319/lo.1992.37.6.1307.">1992</a>)</span>) is expressed relative to 1 atmosphere.
+This solubility parametrization is described as having an RMS error of 0.3 % (± 1.01 μmol kg<sup>-1</sup>).
+The pressure effects can be significant, at 10 <sup>o</sup>C a change in local air pressure between 990 and 1010 hPa changes the equilibrium concentration by 5.4 μmol kg<sup>-1</sup>.
+The quality of the local air pressure measurements during calibration is worth considering.
+<span id="id15">Ponte and Dorandeu (<a class="reference internal" href="oxygen_references.html#id31" title="Rui M. Ponte and Joel Dorandeu. Uncertainties in ECMWF Surface Pressure Fields over the Ocean in Relation to Sea Level Analysis and Modeling. Journal of Atmospheric and Oceanic Technology, 20(2):301–307, February 2003. doi:10/b6hmt4.">2003</a>)</span> estimated the overall uncertainty for ECMWF products to be typically less than 3 hPa over most of the ocean.
+This is equivalent to a 0.9-1.1 μmol kg<sup>-1</sup> error in C<sub>sat</sub>.</p>
+<div class="figure align-default" id="pressure-effect">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/pressure-effect.png"><img alt="Effect of sea level pressure on the equilibirum saturation oxygen concentration (C&lt;sub&gt;sat&lt;/sub&gt;)" class="bg-primary mb-1" src="../_images/pressure-effect.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Effect of local air pressure on the equilibrium saturation oxygen concentration (C<sub>sat</sub>) at 10 <sup>o</sup>C.</span><a class="headerlink" href="#pressure-effect" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="oxygen_sensors_integration.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">3. </span>Sensors and integrations</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="oxygen_mission_execution.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Missions execution</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      <div class="extra_footer">
+        <p>  By the OceanGliders community using
+  <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
+  This work is licensed under a 
+  <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
+</p>
+
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
