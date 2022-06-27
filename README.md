@@ -1,6 +1,6 @@
 ![oceangliders](images/logo-ocean-gliders.png)
 
-# [WIP] OceanGliders Chlorophyll a SOP
+# [Work In Progress] OceanGliders Chlorophyll a SOP
 
 This [GitHub repository](https://github.com/OceanGlidersCommunity/Chla_SOP) is for the [OceanGliders](https://www.oceangliders.org) Chlorophyll a Standard Operating Procedure (SOP).
 
