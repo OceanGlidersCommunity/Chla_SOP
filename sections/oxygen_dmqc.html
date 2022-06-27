@@ -112,11 +112,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="../_static/logo-ocean-gliders.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">OceanGliders Oxygen SOP</h1>
@@ -423,7 +418,7 @@ A drift of 0.0004 % day<sup>-1</sup> has been calculated based on UEA seagliders
 <p>In all but more important in the most homogeneous waters it is essential to correct for the slow time response of optodes <span id="id9">(<a class="reference internal" href="oxygen_references.html#id9" title="Henry C. Bittig, Björn Fiedler, Roland Scholz, Gerd Krahmann, and Arne Körtzinger. Time response of oxygen optodes on profiling platforms and its dependence on flow speed and temperature. Limnology and Oceanography: Methods, 12(8):617-636, 2014. URL: https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.4319/lom.2014.12.617, arXiv:https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.4319/lom.2014.12.617, doi:https://doi.org/10.4319/lom.2014.12.617.">Bittig <em>et al.</em>, 2014</a>)</span>, <span id="id10">(<a class="reference internal" href="oxygen_references.html#id8" title="H. C. Bittig and A. Koertzinger. Technical note: Update on response times, in-air measurements, and in situ drift for oxygen optodes on profiling platforms. Ocean Science, 13(1):1–11, January 2017. doi:10.5194/os-13-1-2017.">Bittig and Koertzinger, 2017</a>)</span> (see <a class="reference internal" href="#kelvin-lag"><span class="std std-numref">Fig. 8.1</span></a>).
 This is particularly critical for optodes using the “standard” black foils, and as previously mentioned Slocum gliders with the optode in the standard location near the tail of the glider <span id="id11">(<a class="reference internal" href="oxygen_references.html#id25" title="B. Moat, D. Smeed, C. Marcinko, S. Popinet, and S Turnock. Flow dis-tortion around underwater gliders and impacts on sensor measurements:a pilot study using large-eddy simulations. National OceanographyCentre Research and Consultancy Report, National Oceanography Centre, Southampton, UK, 58():, 2016. URL: http://nora.nerc.ac.uk/id/eprint/514980/, doi:.">Moat <em>et al.</em>, 2016</a>)</span>.</p>
 <div class="figure align-default" id="kelvin-lag">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/kelvin_lag.png"><img alt="Lag example" class="bg-primary mb-1" src="../_images/kelvin_lag.png" style="width: 600px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="images/kelvin_lag.png"><img alt="Lag example" class="bg-primary mb-1" src="images/kelvin_lag.png" style="width: 600px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Example uncorrected profiles from AlterEco AE5 “Kelvin” Slocum with a 4831 optode with standard foil demonstrating significant lag in both optode temperature and phase.</span><a class="headerlink" href="#kelvin-lag" title="Permalink to this image">¶</a></p>
 </div>
 <p>Correction requires the collection of optode phase, temperature and time.
@@ -468,7 +463,7 @@ Implementing and correcting such a lag should however be fairly simple.</p>
 <li><p>Include into the optimization only up-down pairs that were not influenced by obvious bio-fouling.</p></li>
 </ol>
 <div class="figure align-default" id="geomar-ox-example">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/geomar_ox_example.png"><img alt="GEOMAR correction example" class="bg-primary mb-1" src="../_images/geomar_ox_example.png" style="width: 400px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="images/geomar_ox_example.png"><img alt="GEOMAR correction example" class="bg-primary mb-1" src="images/geomar_ox_example.png" style="width: 400px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 8.2 </span><span class="caption-text">Example of original Optode oxygen concentrations (red) and GEOMAR processed and calibrated (blue) oxygen concentrations. Shown is an up-down pair from a deployment off Angola. Solid lines are the up and dashed lines the down data. Also shown are calibrated oxygen concentrations from a nearby and contemporaneous CTD cast.</span><a class="headerlink" href="#geomar-ox-example" title="Permalink to this image">¶</a></p>
 </div>
 </div>
