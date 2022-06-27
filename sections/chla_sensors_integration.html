@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sensors and integrations &#8212; OceanGliders Chla SOP</title>
+    <title>3. Sensors and integrations &#8212; OceanGliders Chla SOP</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -87,6 +87,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Pre-deployment operations and calibrations" href="chla_pre_deployment.html" />
+    <link rel="prev" title="2. Introduction" href="chla_introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -125,7 +127,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="authors_SOP_development_process.html">
    1. Authors, development process and contributions
@@ -136,44 +138,49 @@ const thebe_selector_output = ".output, .cell_output"
    2. Introduction
   </a>
  </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3. Sensors and integrations
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chla_pre_deployment.html">
-   3. Pre-deployment operations and calibrations
+   4. Pre-deployment operations and calibrations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chla_mission_execution.html">
-   4. Missions execution
+   5. Missions execution
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chla_rtqc.html">
-   5. Required Metadata, Real Time Data Processing &amp; Quality Control
+   6. Required Metadata, Real Time Data Processing &amp; Quality Control
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chla_post_recovery.html">
-   6. Post-recovery operations and calibrations
+   7. Post-recovery operations and calibrations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chla_dmqc.html">
-   7. Delayed Mode Quality Control
+   8. Delayed Mode Quality Control
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="data_sharing.html">
-   8. Data sharing
+   9. Data sharing
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chla_references.html">
-   9. References
+   10. References
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="acknowledgement.html">
-   10. Acknowledgement
+   11. Acknowledgement
   </a>
  </li>
 </ul>
@@ -217,7 +224,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/sections/oxygen_sensors_integration.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/sections/chla_sensors_integration.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -237,10 +244,10 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/OceanGlidersCommunity/Chla_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/oxygen_sensors_integration.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/OceanGlidersCommunity/Chla_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/chla_sensors_integration.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Chla_SOP/edit/main/sections/oxygen_sensors_integration.md"><button
+        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Chla_SOP/edit/main/sections/chla_sensors_integration.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -267,7 +274,7 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#chlorophyll-a-sensors">
-   Chlorophyll a sensors
+   3.1. Chlorophyll a sensors
   </a>
  </li>
 </ul>
@@ -292,7 +299,7 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#chlorophyll-a-sensors">
-   Chlorophyll a sensors
+   3.1. Chlorophyll a sensors
   </a>
  </li>
 </ul>
@@ -305,9 +312,9 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="sensors-and-integrations">
-<span id="sensors-integration"></span><h1>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
+<span id="sensors-integration"></span><h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="chlorophyll-a-sensors">
-<h2>Chlorophyll a sensors<a class="headerlink" href="#chlorophyll-a-sensors" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1. </span>Chlorophyll a sensors<a class="headerlink" href="#chlorophyll-a-sensors" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -335,7 +342,21 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="chla_introduction.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">2. </span>Introduction</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="chla_pre_deployment.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Pre-deployment operations and calibrations</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
