@@ -16,7 +16,7 @@ We recommend reading each chapter in detail to ensure the best quality data.
 
 | Sensor / Glider  |  Slocum |  Autosub/ ALR (NOC) |  Seaglider | Deepglider  |  SeaExplorer |  Spray |  Information |
 |---|---|---|---|---|---|---|---|
-|   |  |   |  |  |   |   |  |
+| SFC - Seapoint  |  |   |  |  |   | X |  |
 |   |  |   |  |  |   |   |  |
 |   |  |   |  |  |   |   |  |
 |   |  |   |  |  |   |   |  |
