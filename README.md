@@ -22,7 +22,7 @@ Please [let us know that you use the SOP](https://github.com/OceanGlidersCommuni
 See contributer guideline [here](https://github.com/OceanGlidersCommunity/Oxygen_SOP/blob/main/CONTRIBUTING.md)
 
 ## Next steps
-1) Writing the SOP collectively, invite more contributors 
+1) Identify lead authors, writing the SOP collectively, invite more contributors 
 2) 4 - 6 months Community review and GOOS endorsement
 3) Submission to OBPS article to get doi
 4) Submission of shorter version to [Frontiers: Research Topic Best Practices in Ocean Observing](https://www.frontiersin.org/research-topics/7173/best-practices-in-ocean-observing) for peer-review.
