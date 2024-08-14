@@ -1,3 +1,9 @@
 jupyter-book==0.12.3
 pyppeteer
 pybtex-apa-style
+sphinxcontrib-applehelp==1.0.4
+sphinxcontrib-devhelp==1.0.2
+sphinxcontrib-htmlhelp==2.0.1
+sphinxcontrib-qthelp==1.0.3
+sphinxcontrib-serializinghtml==1.1.5
+lxml_html_clean
