@@ -16,9 +16,9 @@ Shall we add the nice table from the Thomalla paper summrizing all the methodolo
 |---|---|---|
 | {cite}`Xing2012`  | 	C1 = max<sub>0≤z≤MLD</sub> (Fl(z)) <br> Flc(z) = C1; 0≤z≤d(C1)| - Fluorescence uniform within MLD  <br> - No quenching below max ﬂuorescence within MLD |
 | {cite}`Biermann2015` |  C2 = max<sub>0≤z≤ED</sub> (Fl(z)) <br> Flc(z) = C2; 0≤z≤d(C2) |  - Fluorescence within ED uniform |
-| {cite}`Swart2015`  | C3 = max<sub>0≤z≤ED</sub> $`\left(\frac{Fl}{b_{bp}}\right)`$ <br> Flc(z) = C3 × b<sub>bp</sub>(z); 0≤z≤d(C3) | - ﬂ : bbp ratio constant with depth |
-| {cite}`Hemsley2015`  | Chl<sub>NT</sub> = m × $`b_{{bp}_{NT}}`$ + c*  <br> Chl<sub>DT</sub>(z) = m × b<sub>bp</sub>(z)<sub>DT</sub> + c; 0≤z≤ED <br> *m (slope) and c (intercept) | - ﬂ : bbp ratio constant with depth and time |
-| {cite}`Thomalla2018`  |  Flc<sub>DT</sub> = $`\left(\frac{Fl_{NT}(z)}{Fl_{DT}(z)}\right)`$ × b<sub>bp</sub>(z)<sub>DT</sub>; 0≤z≤QD <br> If Flc<sub>DT</sub>(z) < Flc<sub>DT</sub>(z) then no correction is applied |  - Same depth distribution of ﬂ : bbp between night and day <br> - No quenching at night |
+| {cite}`Swart2015`  | C3 = max<sub>0≤z≤ED</sub> $\left(\frac{Fl}{b_{bp}}\right)$ <br> Flc(z) = C3 × b<sub>bp</sub>(z); 0≤z≤d(C3) | - ﬂ : bbp ratio constant with depth |
+| {cite}`Hemsley2015`  | Chl<sub>NT</sub> = m × $b_{{bp}_{NT}}$ + c*  <br> Chl<sub>DT</sub>(z) = m × b<sub>bp</sub>(z)<sub>DT</sub> + c; 0≤z≤ED <br> *m (slope) and c (intercept) | - ﬂ : bbp ratio constant with depth and time |
+| {cite}`Thomalla2018`  |  Flc<sub>DT</sub> = $\left(\frac{Fl_{NT}(z)}{Fl_{DT}(z)}\right)$ × b<sub>bp</sub>(z)<sub>DT</sub>; 0≤z≤QD <br> If Flc<sub>DT</sub>(z) < Flc<sub>DT</sub>(z) then no correction is applied |  - Same depth distribution of ﬂ : bbp between night and day <br> - No quenching at night |
 
 **b<sub>bp</sub>**: particulate backscattering proﬁle; **d**: depth; **DT**: daytime proﬁle; **ED**: euphotic zone depth; **Fl**: ﬂuorescence proﬁle; **Flc**: corrected ﬂuorescence proﬁle; **FlNT**: averaged ﬂuorescence over the night; **MLD**: mixed layer depth; **NT**: nighttime proﬁle; **QD**: quenching depth; **z**: depth domain
 
