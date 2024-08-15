@@ -7,11 +7,17 @@ This section covers the activities of those deploying and recovering the gliders
 ...
 
 ## In-situ reference samples
-
-## Piloting
 ...
 
-### Gather data to help correct for sensor response time
+(deployment_small_boat)=
+## In situ intercomparison during deployment/recovery from a small boat
+... 
+
+(deployment_ship_CTD)=
+## Calibration during deployment/recovery from a ship with a CTD rosette equipped with a calibrated oxygen sensor 
+...
+
+## Piloting
 ...
 
 ### Gather data to correct for sensor drift
