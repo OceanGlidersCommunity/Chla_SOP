@@ -10,14 +10,12 @@ We recommend reading each chapter in detail to ensure the best quality data.
 **Pre-deployment/Deployment**  
 (1) Check that sensors are in good condition, and you have selected the best option for the planned mission.  
     - BEST: Do two-point calibration ({numref}`two_point_calibration`).  
-(2) Mount the sensor(s) ({numref}sensors_integration).
-(3) Configure sensor for deployment ({numref}sensor_configuration). 
+(2) Mount the sensor(s) ({numref}`sensors_integration`).  
+(3) Configure sensor for deployment ({numref}`sensor_configuration`). Make sure your glider is configured to record phase with correct timings.  
 (4) Dark count assessment in the workshop?
-(5) In-situ reference measurements, recommended using hierarchy of decreasing quality:
-    - BEST: Optodes attached to a CTD ({numref}`deployment_ship_CTD`). 
-    - BEST: multiple co-located CTD casts.
-    - GOOD: ??
-    - OK: ??
+(5) In-situ reference measurements, recommended using hierarchy of decreasing quality
+<br>- BEST: Optodes attached to a CTD ({numref}`deployment_ship_CTD`). <br>- BEST: multiple co-located CTD casts <br>- GOOD: ?? <br>- OK: ??
+
 
 **Mission and Real Time data flow** ({numref}`mission-execution`)  
 (6) Ensure data stream is set up correctly including relevant metadata is sent to allow real time data corrections ({numref}rtqc).
