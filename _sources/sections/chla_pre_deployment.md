@@ -15,6 +15,8 @@
 
 ## Pre-deployment calibration
 ...
+(two_point_calibration)=
+### Two point calibration procedure
 
 (calibration_procedure)=
 #### Calibration procedure
