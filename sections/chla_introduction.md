@@ -12,7 +12,7 @@ We recommend reading each chapter in detail to ensure the best quality data.
     - BEST: Do two-point calibration ({numref}`two_point_calibration`).  
 (2) Mount the sensor(s) ({numref}`sensors_integration`).  
 (3) Configure sensor for deployment ({numref}`sensor_configuration`). Make sure your glider is configured to record phase with correct timings.  
-(4) Dark count assessment in the workshop?
+(4) Dark count assessment in the workshop?  
 (5) In-situ reference measurements, recommended using hierarchy of decreasing quality  
     - BEST: Optodes attached to a CTD ({numref}`deployment_ship_CTD`).  
     - BEST: multiple co-located CTD casts.  
@@ -21,7 +21,7 @@ We recommend reading each chapter in detail to ensure the best quality data.
 
 
 **Mission and Real Time data flow** ({numref}`mission-execution`)  
-(6) Ensure data stream is set up correctly including relevant metadata is sent to allow real time data corrections ({numref}rtqc).
+(6) Ensure data stream is set up correctly including relevant metadata is sent to allow real time data corrections ({numref}`rtqc`).
 
 **Recovery** ({numref}`post-recovery`)  
 (7) Keep sensor ON outside the water to assess any issues related to being in water.  
