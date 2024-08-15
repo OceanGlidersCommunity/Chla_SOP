@@ -286,6 +286,62 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#chlorophyll-a-sensors">
    3.1. Chlorophyll a sensors
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rbr-tridente">
+     3.1.1. RBR Tridente
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wetlabs-ecopuck">
+     3.1.2. WetLabs ECOPuck
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seabird-seaowl">
+     3.1.3. Seabird SeaOWL
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trios-nanoflu">
+     3.1.4. TriOS Nanoflu
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-integration-with-gliders">
+   3.2. Sensor integration with gliders
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mounting-location">
+     3.2.1. Mounting location
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#spray">
+       3.2.1.1. Spray
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seaglider">
+       3.2.1.2. Seaglider
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#slocum">
+       3.2.1.3. Slocum
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seaexplorer">
+       3.2.1.4. SeaExplorer
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -311,6 +367,62 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#chlorophyll-a-sensors">
    3.1. Chlorophyll a sensors
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rbr-tridente">
+     3.1.1. RBR Tridente
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wetlabs-ecopuck">
+     3.1.2. WetLabs ECOPuck
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seabird-seaowl">
+     3.1.3. Seabird SeaOWL
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trios-nanoflu">
+     3.1.4. TriOS Nanoflu
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-integration-with-gliders">
+   3.2. Sensor integration with gliders
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mounting-location">
+     3.2.1. Mounting location
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#spray">
+       3.2.1.1. Spray
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seaglider">
+       3.2.1.2. Seaglider
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#slocum">
+       3.2.1.3. Slocum
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seaexplorer">
+       3.2.1.4. SeaExplorer
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -325,6 +437,71 @@ const thebe_selector_output = ".output, .cell_output"
 <span id="sensors-integration"></span><h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="chlorophyll-a-sensors">
 <h2><span class="section-number">3.1. </span>Chlorophyll a sensors<a class="headerlink" href="#chlorophyll-a-sensors" title="Permalink to this headline">¶</a></h2>
+<p>All existing sensors function using the same principle, i.e measuring the fluorescence emission of chlorophyll a directly after it has been excited. The sensor generally emits light at determined wavelengths chosen based on the target variable (Chlorophyll a, phycocyanin, CDOM etc.). Specific filters are chosen, again based on the target variable, and placed in front of a detector which will measure the fluorescence intensity. The emitted light is generally lower in energy (larger wavelength) than the previously absorbed light (shorter wavelength). The various sensors available on the market and implemented on gliders can have slightly different combination of excitation/emission wavelengths. We summarized below the different EX/EM combinations:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sensor</p></th>
+<th class="head"><p>Excitation/Emission</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>RBR Tridente</p></td>
+<td><p>470nm/695nm or 435nm/700nm</p></td>
+</tr>
+<tr class="row-odd"><td><p>WetLabs ECOPuck (FLBBCD, FLBBPC, FLNTU, FLBBPE)</p></td>
+<td><p>470/695 nm</p></td>
+</tr>
+<tr class="row-even"><td><p>Seabird SeaOWL</p></td>
+<td><p>470/690 nm</p></td>
+</tr>
+<tr class="row-odd"><td><p>TriOS Nanoflu</p></td>
+<td><p>470/682 nm</p></td>
+</tr>
+</tbody>
+</table>
+<p>All sensors apart from Nanoflu (not sure about RBR tridente, I think it does internal ‘computation’ and gives scaled values and no raw data??).
+The WetLabs ECOPuck and the SeaOWL, estimate fluorescence by subtracting a dark count (DC) to the raw counts (engineering units) and multiplying all by a scaling factor (SF). This calibration factors (DC and SF) are normally provided by the manufacturer. (Mention that values can be invalid for a variety of reasons and recommend recalibration etc. or maybe it should go in another section??)</p>
+<div class="section" id="rbr-tridente">
+<h3><span class="section-number">3.1.1. </span>RBR Tridente<a class="headerlink" href="#rbr-tridente" title="Permalink to this headline">¶</a></h3>
+<p>The RBRtridente three channels optical sensor, capable of making multiple fluorescence and backscatter measurements simultaneously. The default set up measures chlorophyll, backscatter and FDOM. Filters can be placed on both the LED and the detector upon request thus allowing for measurements of a customized variables.</p>
+<p>The calibrated range for the chlorophyll a channel is 1	0-50μg/L and the detection limit is 0.01μg/L. The temperature range	is -5°C to +35°C. This sensor gives the possibility for a very high sampling rate up to 32 Hz and has a rather low power consumption, 20mJ/sample (4Hz or slower) and 384mW (8Hz or faster). The sensor exists in both version for a dry bay or a wet section.
+The windows are specifically made of fused silica which allows for the transmission of ultraviolet radiation. RBR design avoided the use of epoxy or resins to avoid issues related to autofluorescence. Furthermore, in order to address issues related to drift in power of the LED and variations in power output based on temperature, a reference photodiode to monitor the LED has been implemented. As the photodiode itself is temperature sensitive, there is a second thermistor to track the photodiode and apply a proper compensation.</p>
+<p>Shall we explain the whole process that happens internally for every sample? reference signal, how the corrected signal is computed etc.?</p>
+</div>
+<div class="section" id="wetlabs-ecopuck">
+<h3><span class="section-number">3.1.2. </span>WetLabs ECOPuck<a class="headerlink" href="#wetlabs-ecopuck" title="Permalink to this headline">¶</a></h3>
+<p>Add specific info</p>
+</div>
+<div class="section" id="seabird-seaowl">
+<h3><span class="section-number">3.1.3. </span>Seabird SeaOWL<a class="headerlink" href="#seabird-seaowl" title="Permalink to this headline">¶</a></h3>
+<p>Add specific info</p>
+</div>
+<div class="section" id="trios-nanoflu">
+<h3><span class="section-number">3.1.4. </span>TriOS Nanoflu<a class="headerlink" href="#trios-nanoflu" title="Permalink to this headline">¶</a></h3>
+<p>Add specific info</p>
+</div>
+</div>
+<div class="section" id="sensor-integration-with-gliders">
+<h2><span class="section-number">3.2. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mounting-location">
+<h3><span class="section-number">3.2.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="spray">
+<h4><span class="section-number">3.2.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+<p>input from expert needed</p>
+</div>
+<div class="section" id="seaglider">
+<h4><span class="section-number">3.2.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+<p>input from expert needed</p>
+</div>
+<div class="section" id="slocum">
+<h4><span class="section-number">3.2.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
+<p>input from expert needed</p>
+</div>
+<div class="section" id="seaexplorer">
+<h4><span class="section-number">3.2.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
+<p>On SeaExplorer gliders, the various existing fluorescence sensors can be installed in either/both (depending on the sensor) the front wet payload section (called the nose cone) or the dry payload section in one of the four (4) puck ports. External mounting using the external puck mounts on the dry payload section is also feasible, but this configuration is rare. (we can add more details and photos too)</p>
+</div>
+</div>
 </div>
 </div>
 
