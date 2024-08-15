@@ -85,6 +85,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="9. Data sharing" href="data_sharing.html" />
@@ -277,6 +279,24 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dark-count-re-calibration">
+   8.1. Dark count re calibration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#non-photochemical-quenching-corrections">
+   8.2. Non photochemical quenching corrections
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -289,6 +309,24 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dark-count-re-calibration">
+   8.1. Dark count re calibration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#non-photochemical-quenching-corrections">
+   8.2. Non photochemical quenching corrections
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -298,6 +336,47 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="delayed-mode-quality-control">
 <span id="dmqc"></span><h1><span class="section-number">8. </span>Delayed Mode Quality Control<a class="headerlink" href="#delayed-mode-quality-control" title="Permalink to this headline">¶</a></h1>
 <p>Text</p>
+<div class="section" id="dark-count-re-calibration">
+<h2><span class="section-number">8.1. </span>Dark count re calibration<a class="headerlink" href="#dark-count-re-calibration" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="non-photochemical-quenching-corrections">
+<h2><span class="section-number">8.2. </span>Non photochemical quenching corrections<a class="headerlink" href="#non-photochemical-quenching-corrections" title="Permalink to this headline">¶</a></h2>
+<p>Fluorescence data has to be corrected for non-photochemical quenching (NPQ) in most cases. NPQ is a physiological response to high light environments used by plants and algae to protect themselves from damage and causes an evident weakening in fluorescence signal during the day. NPQ occurs only during the daytime or whenever light avaialbility is high, therefore when night measurements close in time and space are available, they can be used to correct daytime profiles. Different methods exist for NPQ the paper by <span id="id1">(<a class="reference internal" href="chla_references.html#id3" title="Sandy J. Thomalla, William Moutier, Thomas J. Ryan-Keogh, Luke Gregor, and Julia Schütt. An optimized method for correcting fluorescence quenching using optical backscattering on autonomous platforms. Limnology and Oceanography: Methods, 16(2):132-144, 2018. doi:https://doi.org/10.1002/lom3.10234.">Thomalla <em>et al.</em>, 2018</a>)</span> provides a good overview on the various methodologies.
+The most suitable methodology will vary based on the study area as well as the research question. The assumptions and corrections of each method may not provide credible results for the diffent water column structures so the methodology has to be chosen carefully.</p>
+<p>Shall we add the nice table from the Thomalla paper summrizing all the methodologes? I add the draft below</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Study</p></th>
+<th class="head"><p>Equation</p></th>
+<th class="head"><p>Assumptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span id="id2">(<a class="reference internal" href="chla_references.html#id4" title="Xiaogang Xing, Hervé Claustre, Stéphane Blain, Fabrizio D'Ortenzio, David Antoine, Josephine Ras, and Christophe Guinet. Quenching correction for in vivo chlorophyll fluorescence acquired by autonomous platforms: a case study with instrumented elephant seals in the kerguelen region (southern ocean). Limnology and Oceanography: Methods, 10(7):483-495, 2012. doi:https://doi.org/10.4319/lom.2012.10.483.">Xing <em>et al.</em>, 2012</a>)</span></p></td>
+<td><p>C1 = max<sub>0≤z≤MLD</sub> (Fl(z)) <br> Flc(z) = C1; 0≤z≤d(C1)</p></td>
+<td><p>- Fluorescence uniform within MLD  <br> - No quenching below max ﬂuorescence within MLD</p></td>
+</tr>
+<tr class="row-odd"><td><p><span id="id3">(<a class="reference internal" href="chla_references.html#id5" title="L. Biermann, C. Guinet, M. Bester, A. Brierley, and L. Boehme. An alternative method for correcting fluorescence quenching. OCEAN SCIENCE, 11(1):83-91, 2015. doi:10.5194/os-11-83-2015.">Biermann <em>et al.</em>, 2015</a>)</span></p></td>
+<td><p>C2 = max<sub>0≤z≤ED</sub> (Fl(z)) <br> Flc(z) = C2; 0≤z≤d(C2)</p></td>
+<td><p>- Fluorescence within ED uniform</p></td>
+</tr>
+<tr class="row-even"><td><p><span id="id4">(<a class="reference internal" href="chla_references.html#id6" title="S. Swart, S. J. Thomalla, and P. M. S. Monteiro. The seasonal cycle of mixed layer dynamics and phytoplankton biomass in the sub-antarctic zone: a high-resolution glider experiment. JOURNAL OF MARINE SYSTEMS, 147(SI):103-115, JUL 2015. doi:10.1016/j.jmarsys.2014.06.002.">Swart <em>et al.</em>, 2015</a>)</span></p></td>
+<td><p>C3 = max<sub>0≤z≤ED</sub> <span class="math notranslate nohighlight">\(\left(\frac{Fl}{b_{bp}}\right)\)</span> <br> Flc(z) = C3 × b<sub>bp</sub>(z); 0≤z≤d(C3)</p></td>
+<td><p>- ﬂ : bbp ratio constant with depth</p></td>
+</tr>
+<tr class="row-odd"><td><p><span id="id5">(<a class="reference internal" href="chla_references.html#id7" title="Victoria S. Hemsley, Timothy J. Smyth, Adrian P. Martin, Eleanor Frajka-Williams, Andrew F. Thompson, Gillian Damerell, and Stuart C. Painter. Estimating oceanic primary production using vertical irradiance and chlorophyll profiles from ocean gliders in the north atlantic. Environmental Science &amp; Technology, 49(19):11612-11621, 2015. doi:10.1021/acs.est.5b00608.">Hemsley <em>et al.</em>, 2015</a>)</span></p></td>
+<td><p>Chl<sub>NT</sub> = m × <span class="math notranslate nohighlight">\(b_{{bp}_{NT}}\)</span> + c*  <br> Chl<sub>DT</sub>(z) = m × b<sub>bp</sub>(z)<sub>DT</sub> + c; 0≤z≤ED <br> *m (slope) and c (intercept)</p></td>
+<td><p>- ﬂ : bbp ratio constant with depth and time</p></td>
+</tr>
+<tr class="row-even"><td><p><span id="id6">(<a class="reference internal" href="chla_references.html#id3" title="Sandy J. Thomalla, William Moutier, Thomas J. Ryan-Keogh, Luke Gregor, and Julia Schütt. An optimized method for correcting fluorescence quenching using optical backscattering on autonomous platforms. Limnology and Oceanography: Methods, 16(2):132-144, 2018. doi:https://doi.org/10.1002/lom3.10234.">Thomalla <em>et al.</em>, 2018</a>)</span></p></td>
+<td><p>Flc<sub>DT</sub> = <span class="math notranslate nohighlight">\(\left(\frac{Fl_{NT}(z)}{Fl_{DT}(z)}\right)\)</span> × b<sub>bp</sub>(z)<sub>DT</sub>; 0≤z≤QD <br> If Flc<sub>DT</sub>(z) &lt; Flc<sub>DT</sub>(z) then no correction is applied</p></td>
+<td><p>- Same depth distribution of ﬂ : bbp between night and day <br> - No quenching at night</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>b<sub>bp</sub></strong>: particulate backscattering proﬁle; <strong>d</strong>: depth; <strong>DT</strong>: daytime proﬁle; <strong>ED</strong>: euphotic zone depth; <strong>Fl</strong>: ﬂuorescence proﬁle; <strong>Flc</strong>: corrected ﬂuorescence proﬁle; <strong>FlNT</strong>: averaged ﬂuorescence over the night; <strong>MLD</strong>: mixed layer depth; <strong>NT</strong>: nighttime proﬁle; <strong>QD</strong>: quenching depth; <strong>z</strong>: depth domain</p>
+<p>We can say that if day and night profiles are used, the sunset/sunrise time can be used to separate the profiles or if PAR is available, this variable can used instead</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
