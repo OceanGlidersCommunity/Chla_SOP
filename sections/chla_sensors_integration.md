@@ -42,4 +42,15 @@ input from expert needed
 
 #### SeaExplorer
 On SeaExplorer gliders, the various existing fluorescence sensors can be installed in either/both (depending on the sensor) the front wet payload section (called the nose cone) or the dry payload section in one of the four (4) puck ports. External mounting using the external puck mounts on the dry payload section is also feasible, but this configuration is rare. (we can add more details and photos too)
+The mounting options available for the different sensors on a SeaExplorer can be seen in {numref}`WetlabsSX`.
+
+<!--
+![Wetlabs sensor mounted on SX without the protective copper plate.](/images/wetlabs_SX.png)
+--> 
+
+:::{figure-md} WetlabsSXNC
+<img src="wetlabs_SX.png" alt="WetlabsSX" class="bg-primary mb-1" width="400px">
+
+Wetlabs ECOPuck mounted on one of the side ports in the dry payload section of a SeaExplorer. In the right photo, the protective copper plate used to prevent biofouling is present while it was removed in the left photo.
+:::
 
