@@ -51,6 +51,6 @@ The mounting options available for the different sensors on a SeaExplorer can be
 :::{figure-md} wetlabs_SX
 <img src="/images/wetlabs_SX.png" alt="wetlabs_SX" class="bg-primary mb-1" width="400px">
 
-Wetlabs ECOPuck mounted on one of the side ports in the dry payload section of a SeaExplorer. In the right photo, the protective copper plate used to prevent biofouling is present while it was removed in the left photo.
+Wetlabs ECOPuck mounted on one of the side ports in the dry payload section of a SeaExplorer. In the left photo, the protective copper plate used to prevent biofouling is present while it was removed in the right photo.
 :::
 
